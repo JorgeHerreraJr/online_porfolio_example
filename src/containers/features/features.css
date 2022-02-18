@@ -1,0 +1,56 @@
+.reactTest__features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.reactTest__features-heading {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.reactTest__features-heading h1 {
+    font-family: var(--font-family);
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.reactTest__features-heading p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF8A71;
+    margin-top: 2rem;
+}
+
+.reactTest__features-container {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:990px) {
+    .reactTest__features {
+        flex-direction: column;
+    }
+
+    .reactTest__features-heading {
+        margin: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .reactTest__features-heading h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
